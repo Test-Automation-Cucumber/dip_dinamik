@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation Test Report" duration-ms="50322" started-at="2019-12-04T08:29:30Z" finished-at="2019-12-04T08:30:20Z">
+    <groups>
+    </groups>
+    <test name="Automation Test Report" duration-ms="50322" started-at="2019-12-04T08:29:30Z" finished-at="2019-12-04T08:30:20Z">
+      <class name="com.testautomation.TestRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testautomation.TestRunner.TestRunner@23ceabc1]" name="setUpClass" is-config="true" duration-ms="197" started-at="2019-12-04T08:29:30Z" finished-at="2019-12-04T08:29:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.TestRunner.TestRunner@23ceabc1]" name="feature" duration-ms="49733" started-at="2019-12-04T08:29:30Z" data-provider="features" finished-at="2019-12-04T08:30:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Kgf manuel kur yukleme"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["KGF Kur Yukleme"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testautomation.TestRunner.TestRunner@23ceabc1]" name="tearDownClass" is-config="true" duration-ms="56" started-at="2019-12-04T08:30:20Z" finished-at="2019-12-04T08:30:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testautomation.TestRunner.TestRunner -->
+    </test> <!-- Automation Test Report -->
+  </suite> <!-- Automation Test Report -->
+</testng-results>

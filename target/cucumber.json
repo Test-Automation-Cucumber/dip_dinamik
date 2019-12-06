@@ -1,0 +1,113 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 29796369495,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login with \"hisse_ve_viop\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hisse_ve_viop",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginStepDef.I_login_with(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 943865,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestHooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Yeni emir fiyat degisim",
+        "description": "",
+        "id": "dip-test-cases;yeni-emir-fiyat-degisim",
+        "after": [
+          {
+            "result": {
+              "duration": 172509,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestHooks.AfterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1040912269,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15149660844,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dipHooks"
+          },
+          {
+            "name": "@dipTest"
+          }
+        ]
+      }
+    ],
+    "name": "Dip Test Cases",
+    "description": "",
+    "id": "dip-test-cases",
+    "keyword": "Feature",
+    "uri": "./features/dip.feature",
+    "tags": [
+      {
+        "name": "@dipHooks",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
