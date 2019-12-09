@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 5,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,19 +11,19 @@
         "steps": [
           {
             "result": {
-              "duration": 29796369495,
+              "duration": 36967533962,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I login with \"hisse_ve_viop\"",
+            "line": 5,
+            "name": "Emirler - I login with \"hisse_ve_viop\"",
             "match": {
               "arguments": [
                 {
                   "val": "hisse_ve_viop",
-                  "offset": 14
+                  "offset": 24
                 }
               ],
-              "location": "LoginStepDef.I_login_with(String)"
+              "location": "EmirlerStepDef.I_login_with(String)"
             },
             "keyword": "Given "
           }
@@ -33,7 +33,7 @@
         "before": [
           {
             "result": {
-              "duration": 943865,
+              "duration": 2490130,
               "status": "passed"
             },
             "match": {
@@ -41,14 +41,14 @@
             }
           }
         ],
-        "line": 10,
+        "line": 8,
         "name": "Yeni emir fiyat degisim",
         "description": "",
         "id": "dip-test-cases;yeni-emir-fiyat-degisim",
         "after": [
           {
             "result": {
-              "duration": 172509,
+              "duration": 192247,
               "status": "passed"
             },
             "match": {
@@ -61,10 +61,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1040912269,
+              "duration": 592756358,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I click Al-Sat button",
             "match": {
               "location": "EmirlerStepDef.I_click_Al_Sat_button()"
@@ -73,13 +73,1056 @@
           },
           {
             "result": {
-              "duration": 15149660844,
+              "duration": 432921036,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I should see Yeni Emir popup",
             "match": {
               "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3222977568,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Set Fiyat value \"0,00\" and Sembol \"GARAN.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0,00",
+                  "offset": 17
+                },
+                {
+                  "val": "GARAN.E",
+                  "offset": 35
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 646507324,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Press button \"increase\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "increase",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1085819483,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Fiyat field must be \",01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": ",01",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 708585303,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 436513723,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3276457730,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Set Fiyat value \"0,00\" and Sembol \"GARAN.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0,00",
+                  "offset": 17
+                },
+                {
+                  "val": "GARAN.E",
+                  "offset": 35
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 516718965,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Press button \"decrease\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "decrease",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 933020317,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Fiyat field must be \",00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": ",00",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 545897068,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 441759260,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3250477163,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Set Fiyat value \"5,55\" and Sembol \"GARAN.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5,55",
+                  "offset": 17
+                },
+                {
+                  "val": "GARAN.E",
+                  "offset": 35
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 455220885,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Press button \"keyboard_up\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "keyboard_up",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 902939403,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Fiyat field must be \"5,56\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5,56",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 537040290,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 409723113,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3664409180,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Set Fiyat value \"5,55\" and Sembol \"GARAN.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5,55",
+                  "offset": 17
+                },
+                {
+                  "val": "GARAN.E",
+                  "offset": 35
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 455694593,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Press button \"keyboard_down\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "keyboard_down",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 876133793,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Fiyat field must be \"5,54\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5,54",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 577573987,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 404456653,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3185764177,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Set Fiyat value \"19,99\" and Sembol \"GARAN.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "19,99",
+                  "offset": 17
+                },
+                {
+                  "val": "GARAN.E",
+                  "offset": 36
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 504670968,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Press button \"increase\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "increase",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 930267673,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Fiyat field must be \"20,00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20,00",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 511759627,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 430144706,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3175642991,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Set Fiyat value \"20,00\" and Sembol \"GARAN.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20,00",
+                  "offset": 17
+                },
+                {
+                  "val": "GARAN.E",
+                  "offset": 36
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 522211621,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Press button \"decrease\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "decrease",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.Exception\r\n\tat com.testautomation.StepDef.dip.EmirlerStepDef.validate_Fiyat_field(EmirlerStepDef.java:136)\r\n\tat ✽.Fiyat field must be \"19,99\"(./features/dip.feature:44)\r\n",
+              "duration": 844959007,
+              "status": "failed"
+            },
+            "line": 44,
+            "name": "Fiyat field must be \"19,99\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "19,99",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17369,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4737,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3553,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "Set Fiyat value \"20,00\" and Sembol \"TAVHL.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20,00",
+                  "offset": 17
+                },
+                {
+                  "val": "TAVHL.E",
+                  "offset": 36
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3158,
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "Press button \"increase\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "increase",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3158,
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "Fiyat field must be \"20,02\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20,02",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3553,
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3158,
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3553,
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "Set Fiyat value \"20,00\" and Sembol \"TAVHL.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20,00",
+                  "offset": 17
+                },
+                {
+                  "val": "TAVHL.E",
+                  "offset": 36
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3158,
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "Press button \"decrease\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "decrease",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6316,
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "Fiyat field must be \"20,02\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20,02",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3158,
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18159,
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2369,
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "Set Fiyat value \"25,56\" and Sembol \"TAVHL.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25,56",
+                  "offset": 17
+                },
+                {
+                  "val": "TAVHL.E",
+                  "offset": 36
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2763,
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "Press button \"keyboard_up\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "keyboard_up",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2763,
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "Fiyat field must be \"25,58\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25,58",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2763,
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2763,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2368,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "Set Fiyat value \"25,58\" and Sembol \"TAVHL.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25,58",
+                  "offset": 17
+                },
+                {
+                  "val": "TAVHL.E",
+                  "offset": 36
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2369,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "Press button \"keyboard_down\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "keyboard_down",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3158,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "Fiyat field must be \"25,56\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25,56",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2763,
+              "status": "skipped"
+            },
+            "line": 70,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2368,
+              "status": "skipped"
+            },
+            "line": 71,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3159,
+              "status": "skipped"
+            },
+            "line": 72,
+            "name": "Set Fiyat value \"49,98\" and Sembol \"TAVHL.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "49,98",
+                  "offset": 17
+                },
+                {
+                  "val": "TAVHL.E",
+                  "offset": 36
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3158,
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "Press button \"increase\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "increase",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2763,
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "Fiyat field must be \"50,00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50,00",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2368,
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2763,
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2763,
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "Set Fiyat value \"50,00\" and Sembol \"TAVHL.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50,00",
+                  "offset": 17
+                },
+                {
+                  "val": "TAVHL.E",
+                  "offset": 36
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3158,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "Press button \"decrease\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "decrease",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3158,
+              "status": "skipped"
+            },
+            "line": 80,
+            "name": "Fiyat field must be \"49,98\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "49,98",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10264,
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "I click Al-Sat button",
+            "match": {
+              "location": "EmirlerStepDef.I_click_Al_Sat_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5132,
+              "status": "skipped"
+            },
+            "line": 83,
+            "name": "I should see Yeni Emir popup",
+            "match": {
+              "location": "EmirlerStepDef.I_should_see_Yeni_Emir_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2764,
+              "status": "skipped"
+            },
+            "line": 84,
+            "name": "Set Fiyat value \"50,00\" and Sembol \"PGSUS.E\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50,00",
+                  "offset": 17
+                },
+                {
+                  "val": "PGSUS.E",
+                  "offset": 36
+                }
+              ],
+              "location": "EmirlerStepDef.Set_Fiyat_and_Symbol(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2763,
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "Press button \"decrease\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "decrease",
+                  "offset": 14
+                }
+              ],
+              "location": "EmirlerStepDef.I_click_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2764,
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "Fiyat field must be \"50,05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50,05",
+                  "offset": 21
+                }
+              ],
+              "location": "EmirlerStepDef.validate_Fiyat_field(String)"
             },
             "keyword": "Then "
           }

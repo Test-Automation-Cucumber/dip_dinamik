@@ -17,11 +17,8 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.testautomation.Utility.BrowserUtility;
 
 public class ExtentReportListener {
-
-	public WebDriver driver = BrowserUtility.driver;
 
 	public static ExtentHtmlReporter report = null;
 	public static ExtentReports extent = null;
@@ -58,7 +55,7 @@ public class ExtentReportListener {
 			}
 
 			if (driver != null) {
-				 driver.quit();
+			//	 driver.quit();
 			}
 			break;
 

@@ -49,13 +49,13 @@ public class ITestListenerImpl extends ExtentReportListener implements ITestList
 	}
 
 	public void onStart(ITestContext context) {
-		System.out.println("Execution started on UAT env...");
+		System.out.println("'dip' Automation Tests started...");
 		extent= setUp();
 		
 	}
 
 	public void onFinish(ITestContext context) {
-		System.out.println("Execution completed on UAT env...");
+		System.out.println("dip' Automation Tests completed...");
 		extent.flush();		
 		System.out.println("Generated Report. . .");	
 		

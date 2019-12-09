@@ -7,8 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import com.testautomation.StepDef._CommonStepDef.LoginStepDef;
 import com.testautomation.Utility.PageBase;
 
 public class LoginPage extends PageBase {
@@ -38,6 +36,7 @@ public class LoginPage extends PageBase {
 	}
 
 	public LoginPage validateHomePage() {
+		wait(5);
 		assertTrue(img_appLogo.get(0));
 		return this;
 	}

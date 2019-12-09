@@ -132,11 +132,16 @@ public class PageBase {
 	}
 
 	public void waitAllRequest() {
-		waitUntilJSReady();
 		ajaxComplete();
+		waitForJQueryLoad();
+		waitForAngularLoad();
+		waitUntilJSReady();
 		waitUntilJQueryReady();
 		waitUntilAngularReady();
 		waitUntilAngular5Ready();
+		waitForAngular5Load();
+		//angularLoads();
+
 	}
 
 	/**
@@ -245,21 +250,12 @@ public class PageBase {
 		element.sendKeys(text);
 	}
 
-	// Write Text Element
-	/**
-	 * @param elementBy
-	 * @param index     -- aynı elementten başka varsa index değerini gönder.
-	 * @param index     -- aynı elementten başka varsa index değerini gönder.
-	 */
-	protected void writeText(By elementBy, int index, String text) {
-		List<WebElement> list = driver.findElements(elementBy);
-		WebElement element = list.get(index);
+	// Write Text
+	protected void writeKeyboardButton(WebElement element, Keys digit) {
 		waitClickable(element);
-		element.clear();
-		element.sendKeys(text);
+		element.sendKeys(digit);
 	}
 
-	
 	
 	// Read Text
 	protected String readText(WebElement element) {
@@ -285,6 +281,13 @@ public class PageBase {
 		myAction.moveToElement(element).build().perform();
 	}
 
+	
+	// Assert - element
+	protected void assertEquals(String elementText, String expected_text) {
+		Assert.assertEquals(elementText, expected_text);
+	}
+	
+	
 	// Assert - element
 	protected void assertEquals(WebElement element, String expected_text) {
 		waitClickable(element);
@@ -333,7 +336,7 @@ public class PageBase {
 	protected void goToEndOfPage() {
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
-
+	
 	protected void goToTopOfPage() {
 		js.executeScript("window.scrollTo(0, 0)");
 		try {
@@ -489,16 +492,20 @@ public class PageBase {
 		return tableRows.get(index);
 	}
 
-
-	
 	
 	// Get Attiribute 
-	protected String getAttiribute(By elementBy) {
-		waitAllRequest();
-		return driver.findElement(elementBy).getAttribute("value");
+	protected String getAttiribute(WebElement element, String attributeName) {
+		waitClickable(element);
+		return element.getAttribute(attributeName);
 		}
 	
-	
+	// Set Attiribute 
+	protected void setAttribute(WebElement element, String attName, String attValue) {
+		   js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2]);", 
+	                element, attName, attValue);
+	    }
+
+
 	// Switch Tab Page
 	protected void switchToNewTab(boolean kill_old_tab) {
 		waitAllRequest();
